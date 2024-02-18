@@ -1,0 +1,59 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bakso Tanpa Tepung", "DarkTheme")
+local Tab = Window:NewTab("ZenX Hub")
+local Section = Tab:NewSection("Welcome to ZenX")
+ 
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ 
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Open"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+ 
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
+Section:NewLabel("Auto push up need item push up and execute")
+Section:NewButton("Zen Push up deku", "ButtonInfo", function()
+    while wait() do
+   workspace.Ironzen1121.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("Zaky push up deku", "ButtonInfo", function()
+    while wait() do
+   workspace.suallowww.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("Hunter Push Up Deku", "ButtonInfo", function()
+    while wait() do
+   workspace.KateViolens.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("Dakjop push up deku", "ButtonInfo", function()
+    while wait() do
+   workspace.dakjof_152.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("Arvin push up Deku", "ButtonInfo", function()
+    while wait() do
+   workspace.arvinwibu321.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("immanuel Push up Deku", "ButtonInfo", function()
+    while wait() do
+   workspace.Wisingerq53916.Pushup.LocalScript.RemoteEvent:FireServer()
+end
+end)
