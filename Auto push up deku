@@ -58,7 +58,8 @@ Section:NewButton("immanuel Push up Deku", "ButtonInfo", function()
 end
 end)
 local Tab = Window:NewTab("Yang gak kebagian")
-Section:NewButton("ButtonText", "ButtonInfo", function()
+local Section = Tab:NewSection("Maaf Kalo Gk kebagian:D")
+Section:NewButton("nuel push up deku", "ButtonInfo", function()
     while wait() do
    workspace.Wisingerq53916.Pushup.LocalScript.RemoteEvent:FireServer()
 end
