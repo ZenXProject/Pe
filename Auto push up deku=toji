@@ -64,3 +64,16 @@ Section:NewButton("nuel push up deku", "ButtonInfo", function()
    workspace.Wisingerq53916.Pushup.LocalScript.RemoteEvent:FireServer()
 end
 end)
+local Tab = Window:NewTab("Fix Toji")
+local Section = Tab:NewSection("Fix Toji bug Not work")
+Section:NewButton("Zen push up toji", "ButtonInfo", function()
+    while wait() do
+   workspace.Ironzen1121.Pushup2.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewButton("Zaky Push Up toji", "ButtonInfo", function()
+    while wait() do
+   workspace.suallowww.Pushup2.LocalScript.RemoteEvent:FireServer()
+end
+end)
+Section:NewLabel("Masih beta:D")
